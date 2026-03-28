@@ -81,7 +81,7 @@ jobs:
       - name: Build Release .apk
         run: |
           # Build the launcher
-          gradle :app_pojavlauncher:assembleRelease
+          gradle :app_pojavlauncher:assembleDebug
           mv app_pojavlauncher/build/outputs/apk/release/app_pojavlauncher-release.apk out/app-release.apk
 
       - name: Gen md5sums
